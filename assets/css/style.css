@@ -1,0 +1,201 @@
+root {
+    --article-padding: 0 4em 0 2em;
+}
+
+
+body {
+    background-color: rgb(244, 243, 245);
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #0384fc;
+    background-image: linear-gradient(to left, #0384fc, rgb(61, 61, 255));
+
+}
+
+h1 {
+    font-size: 4em;
+    font-weight: bold;
+    margin: 1em;
+
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    padding: 1em;
+    font-size: 2em;
+
+
+}
+
+li {
+    padding-left: 1em;
+}
+
+figure img {
+    padding: 2em 0 0 0;
+    width: 100%;
+    height: 10em;
+}
+
+main {
+    display: flex;
+    margin: 4em 0 4em 0;
+}
+
+section {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+}
+
+
+article {
+    display: flex;
+    margin: 2em 0 2em 0;
+}
+
+article h2{
+    border-right: 2px solid grey;
+    font-size: 2em;
+    font-weight: bold;
+    padding: 0 2em 0 2em;
+    width: 6%;
+}
+
+article img {
+    padding: 1em;
+    opacity: .7;
+
+
+}
+
+article img:hover {
+    opacity: 1;
+}
+
+#main-project{
+    width: 100%;
+    height: auto;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+#work{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+
+}
+
+#work img{
+    width: 40%;
+    
+}
+
+#contact {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 1em 4em 1em 2em;
+    margin-left: 1em;
+    background-color: #0384fc;
+    font-size: 2em;
+    font-weight: bold;
+    
+}
+
+#about {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #0384fc;
+    background-image: linear-gradient(to left, #0384fc, rgb(61, 61, 255));
+    margin-left: 1em;
+    padding: 2em;
+    
+}
+
+@media only screen and (max-width: 800px) {
+    h1 {
+        font-size: 3em;
+    }
+
+    nav ul {
+        font-size: 1em;
+    }
+    
+    
+    figure {
+      display: none;
+    }
+
+    article h2 {
+        margin-bottom: 1em;
+        border-bottom: 2px solid grey;
+        border-right: none;
+        font-size: 1em;
+        padding: 0 2em 0 2em;
+        width: 4%;
+    }
+
+    article {
+        display: block;
+    }
+  }
+
+@media only screen and (max-width: 1600px) {
+    h1 {
+        font-size: 3em;
+        font-weight: bold;
+        margin: 1em;
+    
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        padding: 1em;
+        font-size: 1.5em;
+    
+    
+    }
+    
+    section {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    
+    }
+
+    article h2 {
+        margin-bottom: 1em;
+        /* border-right: none; */
+        font-size: 1em;
+        padding: 0 2em 0 2em;
+        width: 4%;
+    }
+
+    #contact {
+
+        font-size: 1em;
+        
+    }
+
+}    
