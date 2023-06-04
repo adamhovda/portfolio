@@ -202,6 +202,21 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 20%, rgba(237,237,237,1) 
 
 }
 
+.contact-info:hover {
+    transform: scale(1.1);
+}
+
+@keyframes glowing {
+    0% { box-shadow: 0 0 -10px #ffffff; }
+    40% { box-shadow: 0 0 20px #ffffff; }
+    60% { box-shadow: 0 0 20px #ffffff; }
+    100% { box-shadow: 0 0 -10px #ffffff; }
+  }
+  
+  .contact-info-glow {
+    animation: glowing 5000ms infinite;
+  }
+
 .socials {
     margin-top: 100px;
 }
@@ -230,6 +245,7 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 20%, rgba(237,237,237,1) 
 
   .portfolioImg {
     /* height: 200px; */
+    object-fit: scale-down;
   }
 
   .imgDescription {
